@@ -5,7 +5,7 @@ do
     for i in {0..10}
     do
         let cycle=$len/10*$i
-        for j in {0..4}
+        for j in {1..20}
         do
             gtime -f"RUNNING,$len,$cycle,%e,%M" ./main.out 0 $len $cycle 2>> result.csv
             gtime -f"REVERSE,$len,$cycle,%e,%M" ./main.out 1 $len $cycle 2>> result.csv
